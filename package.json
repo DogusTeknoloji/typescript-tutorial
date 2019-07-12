@@ -1,0 +1,22 @@
+{
+  "name": "typescript-tutorial",
+  "version": "1.0.0",
+  "description": "Internal training material",
+  "main": "test-1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umutozel/typescript-tutorial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/umutozel/typescript-tutorial/issues"
+  },
+  "homepage": "https://github.com/umutozel/typescript-tutorial#readme",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}
