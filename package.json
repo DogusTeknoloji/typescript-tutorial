@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/umutozel/typescript-tutorial#readme",
   "devDependencies": {
-    "http-server": "^0.11.1"
+    "http-server": "^0.11.1",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
   }
 }
