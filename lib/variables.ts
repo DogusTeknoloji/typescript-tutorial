@@ -1,6 +1,7 @@
-// tslint:disable-next-line:no-var-keyword
+// tslint:disable-next-line:no-var-keyword prefer-const
 var no = 1.4;
 
+// tslint:disable-next-line:prefer-const
 let firstName = "Zaphod";
 
 // tslint:disable-next-line:semicolon
@@ -49,7 +50,7 @@ const objClass = new Animal("Demogorgon");
 // intellisense çalışır
 console.log(objLiteral.firstName);
 
-// property'lere dictionary gibi erişebiliriz,
+// özelliklere dictionary gibi erişebiliriz,
 // tırnak içinde de intellisense çalışıyor (artık, ilk versiyonlarda bu özellik yoktu)
 // tslint:disable-next-line:no-string-literal
 console.log(objClass["name"]);
@@ -59,7 +60,7 @@ const objAny1 = objLiteral as any;
 console.log(objAny1.firstName);
 
 // tslint:disable-next-line:no-angle-bracket-type-assertion
-const objAny2 = <any>objClass;
+const objAny2 = <any> objClass;
 console.log(objAny2.name);
 
 // dizi tipini otomatik tanır, number[]
@@ -79,3 +80,8 @@ if (~array1.indexOf(3)) {
 // indexOf elemanı bulamazsa -1 döner, -1 tüm sayılar içinde ters bitleri alındığında 0 dönen tek sayıdır
 // böylece if (0) demiş oluyoruz, 0'da JavaScript için falsy bir değer.
 // tüm bunları if (array1.indexOf(3) !== -1) yazmamak için yaptık :P
+
+// değinmemiz gereken önemli bir nokta var, && ve || JavaScript dolayısıyla TypeScript için ve/veya değil
+// && son bulduğun truthy (doğrumsu), || ilk bulduğun truthy değeri al demek
+const weirdAndOr = (objLiteral && objLiteral.firstName) || "default";
+console.log(`weirdAndOr: ${weirdAndOr}`);
