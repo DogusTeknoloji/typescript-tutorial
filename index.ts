@@ -1,5 +1,5 @@
-import * as functions from "./lib/functions";
 import Animal from "./lib/Animal";
+import * as functions from "./lib/functions";
 
 console.log(`çift sayı sayısı: ${functions.countEven(1, 2, 3, 4, 5, 6)}`);
 
