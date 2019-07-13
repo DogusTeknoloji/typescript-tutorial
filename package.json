@@ -4,6 +4,8 @@
   "description": "Internal training material",
   "main": "test-1.js",
   "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
