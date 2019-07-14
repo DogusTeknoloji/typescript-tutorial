@@ -1,14 +1,5 @@
-import Animal from "./lib/Animal";
-import * as functions from "./lib/functions";
+import { Macan, Porsche, sayModel } from "./lib/types";
 
-console.log(`çift sayı sayısı: ${functions.countEven(1, 2, 3, 4, 5, 6)}`);
+sayModel(new Porsche("Targa 4S", 2016));
 
-console.log(`28 + 14 = ${functions.dynamicFunc(28, 14)}`);
-
-console.log(`numberify of 42: ${functions.numberify(42)}, "Prefect": ${functions.numberify("Prefect")}`);
-
-// emoji değişkenler :)
-const ಠ_ಠ = new Animal("Düldül");
-console.log(`stringify of düldül: ${functions.stringify(ಠ_ಠ, 12)}`);
-
-console.log(functions.default("hata oldu", 0, "sıkıntı var"));
+sayModel(new Macan(2016));
