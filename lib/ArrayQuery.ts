@@ -11,10 +11,7 @@ interface IExpression {
 
 export class ArrayQuery<T> implements IQuery<T> {
 
-    private expressions: IExpression[] = [];
-
-    constructor(private array: T[], expressions: IExpression[] = []) {
-        this.expressions = expressions;
+    constructor(private array: T[], private expressions: IExpression[] = []) {
     }
 
     public where(predicate: (x: T) => boolean): IQuery<T> {
