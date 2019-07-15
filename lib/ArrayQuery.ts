@@ -57,7 +57,7 @@ export class ArrayQuery<T> implements IQuery<T> {
     }
 
     private clone<TOut = T>(type: ExpressionType, value: any) {
-        const newExpressions = [...this.expressions, { type: ExpressionType.skip, value }];
+        const newExpressions = [...this.expressions, { type, value }];
 
         return new ArrayQuery<TOut>(this.array as any, newExpressions);
     }
