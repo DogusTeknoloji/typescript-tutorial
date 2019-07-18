@@ -2,7 +2,7 @@
   "name": "typescript-tutorial",
   "version": "1.0.0",
   "description": "Internal training material",
-  "main": "test-1.js",
+  "main": "./dist/index.js",
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch",
